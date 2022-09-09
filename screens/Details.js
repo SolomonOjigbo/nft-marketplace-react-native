@@ -1,3 +1,4 @@
+import React from "react";
 import {
 	Text,
 	View,
@@ -51,7 +52,6 @@ const Details = ({ route, navigation }) => {
 				backgroundColor="transparent"
 				translucent={true}
 			/>
-
 			<View
 				style={{
 					width: "100%",
@@ -66,7 +66,6 @@ const Details = ({ route, navigation }) => {
 			>
 				<RectButton minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
 			</View>
-
 			<FlatList
 				data={data.bids}
 				renderItem={({ item }) => <DetailsBid bid={item} />}
